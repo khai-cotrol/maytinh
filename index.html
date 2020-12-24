@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<h1> Máy Tính Khải Làm</h1>
+<table>
+    <tr>
+        <th colspan="2"><input  id="1" type="text"></th>
+        <th colspan="2"><input  id="2" type="text"></th>
+    </tr>
+    <tr>
+        <td><input type="button" name="okok" value="cong(+)" onclick="cong()"></td>
+        <td><input type="button" name="okok" value="tru(-)"onclick="tru()"> </td>
+        <td><input type="button" name="okok" value="nhan(*)" onclick="nhan()"> </td>
+        <td><input type="button" name="okok" value="chia(/)" onclick="chia()"> </td>
+    </tr>
+    <p id="tinhtoan"></p>
+    <script>
+        function cong(){
+            let a1= parseInt(document.getElementById("1").value);
+            let a2= parseInt(document.getElementById("2").value);
+            let str =a1+a2;
+            document.getElementById("tinhtoan").innerHTML=str;
+        }
+        function tru(){
+            let a1= parseInt(document.getElementById("1").value);
+            let a2= parseInt(document.getElementById("2").value);
+            let str =a1-a2;
+            document.getElementById("tinhtoan").innerHTML=str;
+        }
+        function nhan(){
+            let a1= parseInt(document.getElementById("1").value);
+            let a2= parseInt(document.getElementById("2").value);
+            let str =a1*a2;
+            document.getElementById("tinhtoan").innerHTML=str;
+        }
+        function chia(){
+            let a1= parseInt(document.getElementById("1").value);
+            let a2= parseInt(document.getElementById("2").value);
+            let str =a1/a2;
+            document.getElementById("tinhtoan").innerHTML=str;
+        }
+    </script>
+</table>
+</body>
+</html>
